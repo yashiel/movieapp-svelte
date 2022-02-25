@@ -35,6 +35,6 @@
 	<hr />
 {/each}
 
-{#if data.page > 1}<a sveltekit:prefetch sveltekit:noscroll href={`/popular/${data.page - 1}`}>Previous Page</a> {/if} | <a sveltekit:prefetch sveltekit:noscroll href={`/popular/${data.page + 1}`}>Next Page</a> <br />
+{#if data.page > 1}<a sveltekit:prefetch href={`/popular/${data.page - 1}`}>Previous Page</a> {/if} | <a sveltekit:prefetch href={`/popular/${data.page + 1}`}>Next Page</a> <br />
 <span>Current Page : <b>{data.page}</b></span> <span>Total Pages : <b>{data.total_pages}</b></span>
 <span>Total Results : <b>{data.total_results}</b></span>
